@@ -41,3 +41,32 @@ Selain itu, proyek ini juga mencakup:
 - **Login PGAdmin:** dari file `.env`  
 
 ---
+
+🧰 Cara Menjalankan Proyek
+1️⃣ Jalankan Docker Compose
+
+Buka terminal di folder proyek, lalu jalankan:
+
+docker-compose up -d
+
+2️⃣ Cek Status Container
+docker ps
+
+3️⃣ Akses pgAdmin4
+
+Buka browser dan kunjungi:
+
+http://localhost:44050
+
+
+Login menggunakan email dan password dari .env.
+
+Tambahkan server PostgreSQL dengan:
+
+Host: postgres_muhammad_irsyad_mustaqim
+
+Port: 5432
+
+Username: postgres
+
+Password: ifunggul
