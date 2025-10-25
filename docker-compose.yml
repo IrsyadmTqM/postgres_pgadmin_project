@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  postgres_muhammad_irsyad_mustaqim:        
+    image: postgres:15
+    container_name: postgres_muhammad_irsyad_mustaqim
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "22050:5432"       
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    networks:
+      - mynetwork
+
+  pgadmin_muhammad_irsyad_mustaqim:
+    image: dpage/pgadmin4
+    container_name: pgadmin_muhammad_irsyad_mustaqim
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@ifunggul.ac.id
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "44050:80"  
+    depends_on:
+      - postgres_muhammad_irsyad_mustaqim
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
