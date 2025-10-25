@@ -43,16 +43,17 @@ Selain itu, proyek ini juga mencakup:
 ---
 
 🧰 Cara Menjalankan Proyek
-1️⃣ Jalankan Docker Compose
+1️⃣ Jalankan Docker Compose:
 
 Buka terminal di folder proyek, lalu jalankan:
 
 docker-compose up -d
 
-2️⃣ Cek Status Container
+2️⃣ Cek Status Container:
+
 docker ps
 
-3️⃣ Akses pgAdmin4
+3️⃣ Akses pgAdmin4:
 
 Buka browser dan kunjungi:
 
